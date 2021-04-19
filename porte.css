@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montsseraf,sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/d18.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 8%;
+    padding-right: 8%;
+
+}
+.logo{
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform .4s;
+
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+span{
+    color: #ff9800;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+nav ul li a:hover{
+    color: #ff9800;
+    transition: 0.4s;
+}
+.btn{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid transparent;
+    padding: 8px 12px;
+    background: #ff9800;
+    border-radius: 30px;
+    transform: transform 0.5s;
+
+}
+.btn:hover{
+    transform: scale(1.2);
+
+
+}
+.contenu{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+
+}
+.contenu h1{
+    color: #fff;
+    margin: 20px 0 20px;
+    font-size: 40px;
+}
+.contenu h3{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+.contenu h4{
+    color: #6f6f6f;
+    letter-spacing: 2px;
+}
+#nom{
+    color: #ff9800;
+}
+.connect{
+    position: absolute;
+    border:2px solid #fff;
+    border-radius: 30px;
+    padding: 7px;
+}
+.connect form input[type=submit]{
+    padding: 8px;
+    background-color: #ff9800;
+    border-radius: 30px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    border: 1px solid #ff9800 ;
+
+}
+.connect form input[type=mail]{
+    border: 1px solid #ff9800;
+}
+.connect form input[type=mail]{
+    padding: 8px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: #000;
+    position: relative;
+}
+.rightcontenu{
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    transform: translateY(-50%);
+    width: 40%;
+}
+.rightcontenu h3{
+    color: #ff9800;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+.rightcontenu p{
+    color: rgb(158, 18, 18);
+    margin-top: 30px;
+    font-size: 15px;
+}
+.bar_recherche input[type=text]{
+    border: 1px solid #fff;
+    padding: 19px;
+    background-color: transparent;
+    color: #fff;
+}
+.bar_recherche input[type=submit]{
+    border: 1px solid #fff;
+    padding: 19px;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+  html, body{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  }
+  ::selection{
+    background: #ff80bf;
+  
+  }
+  .container{
+    background: #fff;
+    max-width: 350px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+  }
+  .container form .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    position: relative;
+  }
+  .container form .title:before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 33px;
+    left: 0px;
+    bottom: 3px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  }
+  .container form .input-box{
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    position: relative;
+  }
+  .container form .input-box input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+  }
+  .container form .underline::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+  }
+  .container form .underline::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+  }
+  .container form .input-box input:focus ~ .underline::after,
+  .container form .input-box input:valid ~ .underline::after{
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  .container form .button{
+    margin: 40px 0 20px 0;
+  }
+  .container .input-box input[type="submit"]{
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+    font-size: 17px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .container .input-box input[type="submit"]:hover{
+    letter-spacing: 1px;
+    background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+  }
+  .container .option{
+    font-size: 14px;
+    text-align: center;
+  }
+  .container .facebook a,
+  .container .twitter a{
+    display: block;
+    height: 45px;
+    width: 100%;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 20px;
+    line-height: 45px;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .container .facebook i,
+  .container .twitter i{
+    padding-right: 12px;
+    font-size: 20px;
+  }
+  .container .twitter a{
+    background: linear-gradient(to right,  #00acee 0%, #1abeff 100%);
+    margin: 20px 0 15px 0;
+  }
+  .container .twitter a:hover{
+    background: linear-gradient(to left,  #00acee 0%, #1abeff 100%);
+    margin: 20px 0 15px 0;
+  }
+  .container .facebook a{
+    background: linear-gradient( to right,  #3b5998 0%, #476bb8 100%);
+    margin: 20px 0 50px 0;
+  }
+  .container .facebook a:hover{
+    background: linear-gradient( to left,  #3b5998 0%, #476bb8 100%);
+    margin: 20px 0 50px 0;
+  }
+  
